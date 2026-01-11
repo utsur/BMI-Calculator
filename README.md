@@ -10,6 +10,9 @@ The project is organized following the separation of concerns principle:
 - **bmi_calculator_core.py**: Contains the core BMI calculation logic
 - **test_bmi_core.py**: Contains tests for the core functionality
 
+### Screenshot of the Application
+<img alt="img.png" height="auto" src="screenshot.png" width="30%"/>
+
 ## Features
 
 - Calculate BMI based on weight (kg) and height (m)
