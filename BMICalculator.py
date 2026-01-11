@@ -152,7 +152,7 @@ class BMICalculator:
             self.bmi_result.config(text=f"Your BMI: {bmi:.2f}")
             self.bmi_category.config(text=f"Category: {category}")
 
-            # Get color based on category using the core function
+            # Get color based on the category using the core function
             color = get_category_color(category)
             self.bmi_category.config(foreground=color)
 

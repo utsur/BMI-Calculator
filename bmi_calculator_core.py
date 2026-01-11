@@ -4,13 +4,8 @@ import re
 def calculate_bmi(weight, height):
     """
     Calculate BMI using weight in kg and height in meters.
-    
-    Args:
-        weight (float): Weight in kilograms
-        height (float): Height in meters
-        
-    Returns:
-        float: Calculated BMI value
+    Args:    weight (float): Weight in kilograms, height (float): Height in meters
+    Returns: float: Calculated BMI value
     """
     if weight <= 0 or height <= 0:
         raise ValueError("Weight and height must be positive values.")
@@ -20,12 +15,8 @@ def calculate_bmi(weight, height):
 def get_bmi_category(bmi):
     """
     Determine the BMI category based on the BMI value.
-    
-    Args:
-        bmi (float): BMI value
-        
-    Returns:
-        str: BMI category (Underweight, Normal weight, Overweight, or Obesity)
+    Args:    bmi (float): BMI value
+    Returns: str: BMI category (Underweight, Normal weight, Overweight, or Obesity)
     """
     if bmi < 18.5:
         return "Underweight"
@@ -39,12 +30,8 @@ def get_bmi_category(bmi):
 def get_category_color(category):
     """
     Get the color code for a BMI category.
-    
-    Args:
-        category (str): BMI category
-        
-    Returns:
-        str: Hex color code
+    Args:    category (str): BMI category
+    Returns: str: Hex color code
     """
     if category == "Underweight":
         return "#2196F3"  # Blue
@@ -58,11 +45,7 @@ def get_category_color(category):
 def validate_input(weight_str, height_str):
     """
     Validate weight and height input strings.
-    
-    Args:
-        weight_str (str): Weight as string
-        height_str (str): Height as string
-        
+    Args: weight_str (str): Weight as string, height_str (str): Height as string
     Returns:
         tuple: (is_valid, error_message, weight, height)
             - is_valid (bool): True if input is valid, False otherwise

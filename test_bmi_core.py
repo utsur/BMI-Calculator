@@ -3,7 +3,7 @@ from bmi_calculator_core import calculate_bmi, get_bmi_category, get_category_co
 
 def test_calculate_bmi():
     """Test the BMI calculation function"""
-    # Test normal case
+    # Test a normal case
     assert round(calculate_bmi(70, 1.75), 2) == 22.86
     
     # Test edge cases
@@ -47,7 +47,7 @@ def test_validate_input():
     assert weight == 70
     assert height == 1.75
     
-    # Test with comma as decimal separator
+    # Test with comma as a decimal separator
     is_valid, error, weight, height = validate_input("70,5", "1,75")
     assert is_valid == True
     assert error == ""
