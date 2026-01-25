@@ -11,7 +11,7 @@ The project is organized following the separation of concerns principle:
 - **test_bmi_core.py**: Contains tests for the core functionality
 
 ### Screenshot of the Application
-<img alt="img.png" height="auto" src="screenshot.png" width="30%"/>
+<img alt="img.png" height="auto" src="BMI_GUI_screenshot1.png" width="30%"/>
 
 ## Features
 
